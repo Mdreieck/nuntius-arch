@@ -239,7 +239,7 @@
       <div class="cap">
         <span class="tag">Transmisión</span>
         <h4>Transmisión SAME / EAS</h4>
-        <p>La aplicación EAS convierte el CAP en señal <b>SAME</b> y la emite por los <b>radios</b> conectados a la PC, de modo que Nuntius también <b>transmite</b> alertas.</p>
+        <p>Los <b>radios</b> transmiten de forma continua (audio de fondo); al llegar un CAP, la aplicación EAS lo convierte en señal <b>SAME</b> y un <b>relé conmuta</b> la salida de audio para emitir la alerta. Nuntius no solo recibe: también <b>transmite</b>.</p>
       </div>
     </div>
   </section>
@@ -309,7 +309,7 @@
           </div>
           <div class="node">
             <span class="n-title">Transmisores SAME</span>
-            <span class="n-sub">PC + app EAS. Reciben el CAP y lo emiten como señal SAME por los radios de salida.</span>
+            <span class="n-sub">PC + app EAS. Radios con audio de fondo continuo; al llegar un CAP, un relé conmuta la salida y emiten la señal SAME.</span>
             <div class="chain"><span class="link">Nuntius</span><span class="sep">→</span><span class="link">App EAS</span><span class="sep">→</span><span class="link">Radios TX</span></div>
             <div class="chips"><span class="chip">Electron</span><span class="chip">SAME/EAS</span></div>
           </div>
@@ -391,7 +391,7 @@
         <div class="fc-head"><span class="dir out">Saliente</span><h4>Alerta CAP / transmisión</h4></div>
         <ol>
           <li>El operador <b>emite un CAP</b> en el panel con su cobertura territorial.</li>
-          <li>Los <b>transmisores SAME</b> lo difunden por radio; MDreieck transmite.</li>
+          <li>En los <b>transmisores SAME</b> un <b>relé conmuta</b> la salida (del audio de fondo a la alerta) y difunde por radio.</li>
           <li>Los <b>IoT lo reciben directo</b> (sin esperar al radio) y suenan; apps y pantallas lo muestran.</li>
         </ol>
       </div>
